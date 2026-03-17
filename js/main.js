@@ -45,7 +45,7 @@ function registrarAlumno(evento){
    
 
     if (isNaN(edadNum) ) {
-        alertaError("La edad debe ser un número");
+        alertaError("La edad debe ser un numero");
         return;
     }
     if (edadNum < 0 ) {
@@ -54,7 +54,7 @@ function registrarAlumno(evento){
     }
     
     if (isNaN(anioLectivoNum) ) {
-        alertaError("El año lectivo debe ser un número");
+        alertaError("El año lectivo debe ser un numero");
         return;
     }
     if (anioLectivoNum < 0 ) {
@@ -64,7 +64,7 @@ function registrarAlumno(evento){
 
    
    if (!nombre ){
-        alertaWarning("El nombre no puede estar vacío");
+        alertaWarning("El nombre no puede estar vacio");
         return;
    }
    

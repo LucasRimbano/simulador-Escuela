@@ -25,11 +25,11 @@ function alertaWarning(texto) {
 
 function alertaConfirmacion(texto, callback) {
   Swal.fire({
-    title: "¿Estás seguro?",
+    title: "¿Estas seguro?",
     text: texto,
     icon: "warning",
     showCancelButton: true,
-    confirmButtonText: "Sí",
+    confirmButtonText: "Si",
     cancelButtonText: "Cancelar"
   }).then((result) => {
     if (result.isConfirmed) {
