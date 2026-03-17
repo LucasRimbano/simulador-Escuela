@@ -81,7 +81,7 @@ function registrarAlumno(evento){
 
 
    if (!apellido ){
-       alertaWarning("El apellido no puede estar vacío");
+       alertaWarning("El apellido no puede estar vacio");
        return;
    }
     for (let i =0 ; i<apellido.length; i++){
@@ -173,12 +173,8 @@ btnGuardar.addEventListener("click", guardarEnLocalStorage);
 
 function guardarEnLocalStorage() {
     localStorage.setItem("alumnos", JSON.stringify(alumnos));
-    const zonaMensaje = document.getElementById("mensaje");
-    zonaMensaje.innerHTML = "";
-    const mensaje = document.createElement("p");
-    mensaje.style.color = "green";
     alertaExito("Alumnos guardados correctamente");
-    zonaMensaje.appendChild(mensaje);
+  
 }
 
 const btnCargar = document.getElementById("btnCargar");
@@ -219,5 +215,3 @@ function cargarDesdeLocalStorage() {
 
  mostrarLista()
 }
-
-
